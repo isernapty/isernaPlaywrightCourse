@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" name="Playwright Project.dll" fullname="C:\Users\i.serna\Experiments\dotnetCourse\isernaPlaywrightCourse\bin\Debug\net8.0\Playwright Project.dll" runstate="Runnable" testcasecount="7" result="Passed" total="7" passed="7" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.18.1.0" clr-version="8.0.7" start-time="2024-08-06 10:44:56Z" end-time="2024-08-06 10:45:25Z" duration="29.395686">
+  <command-line><![CDATA[C:\Users\i.serna\Experiments\dotnetCourse\isernaPlaywrightCourse\bin\Debug\net8.0\testhost.dll --port 64232 --endpoint 127.0.0.1:064232 --role client --parentprocessid 31448 --telemetryoptedin false]]></command-line>
+  <test-suite type="Assembly" id="0-1012" name="Playwright Project.dll" fullname="C:\Users\i.serna\Experiments\dotnetCourse\isernaPlaywrightCourse\bin\Debug\net8.0\Playwright Project.dll" runstate="Runnable" testcasecount="7" result="Passed" start-time="2024-08-06T10:44:56.1557845Z" end-time="2024-08-06T10:45:25.5281017Z" duration="29.371309" total="7" passed="7" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="4.0.1.0" clr-version="8.0.7" os-version="Microsoft Windows 10.0.19045" platform="Win32NT" cwd="C:\Users\i.serna\Experiments\dotnetCourse\isernaPlaywrightCourse\bin\Debug\net8.0" machine-name="PACTXVDIDEV228" user="i.serna" user-domain="ITSPTY" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="SynchronousEvents" value="False" />
+      <setting name="InternalTraceLevel" value="Off" />
+      <setting name="RandomSeed" value="2034738494" />
+      <setting name="SkipNonTestAssemblies" value="True" />
+      <setting name="ProcessModel" value="InProcess" />
+      <setting name="DomainUsage" value="Single" />
+      <setting name="DefaultTestNamePattern" value="{m}{a}" />
+      <setting name="WorkDirectory" value="C:\Users\i.serna\Experiments\dotnetCourse\isernaPlaywrightCourse\bin\Debug\net8.0" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="34420" />
+      <property name="_APPDOMAIN" value="testhost" />
+    </properties>
+    <test-suite type="SetUpFixture" id="0-1000" name="[default namespace]" fullname="Playwright_Project_NUnitAssemblyHooks" classname="Playwright_Project_NUnitAssemblyHooks" runstate="Runnable" testcasecount="7" result="Passed" start-time="2024-08-06T10:44:56.1616457Z" end-time="2024-08-06T10:45:25.5280042Z" duration="29.365407" total="7" passed="7" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <output><![CDATA[-> Loading plugin C:\Users\i.serna\Experiments\dotnetCourse\isernaPlaywrightCourse\bin\Debug\net8.0\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+-> Loading plugin C:\Users\i.serna\Experiments\dotnetCourse\isernaPlaywrightCourse\bin\Debug\net8.0\Playwright Project.dll
+-> Using default config
+]]></output>
+      <test-suite type="TestSuite" id="0-1013" name="Playwright_Project" fullname="Playwright_Project" runstate="Runnable" testcasecount="7" result="Passed" start-time="2024-08-06T10:44:56.4019645Z" end-time="2024-08-06T10:45:25.5262509Z" duration="29.123342" total="7" passed="7" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestSuite" id="0-1014" name="Features" fullname="Playwright_Project.Features" runstate="Runnable" testcasecount="7" result="Passed" start-time="2024-08-06T10:44:56.4022542Z" end-time="2024-08-06T10:45:25.5260704Z" duration="29.122872" total="7" passed="7" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="TestFixture" id="0-1003" name="ApiTestFeature" fullname="Playwright_Project.Features.ApiTestFeature" classname="Playwright_Project.Features.ApiTestFeature" runstate="Runnable" testcasecount="1" result="Passed" start-time="2024-08-06T10:44:56.4024275Z" end-time="2024-08-06T10:44:59.4082085Z" duration="3.005684" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="Description" value="ApiTest" />
+            </properties>
+            <test-case id="0-1004" name="TestGETAPICall" fullname="Playwright_Project.Features.ApiTestFeature.TestGETAPICall" methodname="TestGETAPICall" classname="Playwright_Project.Features.ApiTestFeature" runstate="Runnable" seed="1792266268" result="Passed" start-time="2024-08-06T10:44:56.4064545Z" end-time="2024-08-06T10:44:59.4049831Z" duration="2.998500" asserts="0">
+              <properties>
+                <property name="Description" value="Test GET API Call" />
+              </properties>
+              <output><![CDATA[Given I prepare the query vars for the request
+-> done: CatApiTestStepDefinitions.GivenIPrepareTheQueryVarsForTheRequest() (0.0s)
+When I send the GET request to the API
+-> done: CatApiTestStepDefinitions.WhenISendTheGETRequestToTheAPI() (0.6s)
+Then I receive the response with a status 200
+-> done: CatApiTestStepDefinitions.ThenIReceiveTheResponseWithAStatus() (0.0s)
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="0-1001" name="BookerApiFeature" fullname="Playwright_Project.Features.BookerApiFeature" classname="Playwright_Project.Features.BookerApiFeature" runstate="Runnable" testcasecount="1" result="Passed" start-time="2024-08-06T10:44:59.4095807Z" end-time="2024-08-06T10:45:02.5873249Z" duration="3.177641" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="Description" value="BookerApi" />
+            </properties>
+            <test-case id="0-1002" name="CreateAuthToken" fullname="Playwright_Project.Features.BookerApiFeature.CreateAuthToken" methodname="CreateAuthToken" classname="Playwright_Project.Features.BookerApiFeature" runstate="Runnable" seed="1824068150" result="Passed" start-time="2024-08-06T10:44:59.4108652Z" end-time="2024-08-06T10:45:02.5870448Z" duration="3.176077" asserts="0">
+              <properties>
+                <property name="Description" value="Create Auth Token" />
+              </properties>
+              <output><![CDATA[Given I extract the username and password from the JSON file
+-> done: BookerApiStepDefinitions.GivenIExtractTheUsernameAndPasswordFromTheJSONFile() (0.0s)
+When I call the auth API endpoint
+-> done: BookerApiStepDefinitions.WhenICallTheAuthAPIEndpoint() (0.8s)
+Then I receive a token within the response
+{"token":"c42c04617451110"}
+-> done: BookerApiStepDefinitions.ThenIReceiveATokenWithinTheResponse() (0.0s)
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="0-1005" name="LoginFeature" fullname="Playwright_Project.Features.LoginFeature" classname="Playwright_Project.Features.LoginFeature" runstate="Runnable" testcasecount="3" result="Passed" start-time="2024-08-06T10:45:02.5889232Z" end-time="2024-08-06T10:45:18.4201009Z" duration="15.830664" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="Description" value="Login" />
+            </properties>
+            <test-case id="0-1008" name="LockedUserLogin" fullname="Playwright_Project.Features.LoginFeature.LockedUserLogin" methodname="LockedUserLogin" classname="Playwright_Project.Features.LoginFeature" runstate="Runnable" seed="1027818786" result="Passed" start-time="2024-08-06T10:45:02.5894290Z" end-time="2024-08-06T10:45:06.4411166Z" duration="3.851563" asserts="0">
+              <properties>
+                <property name="Description" value="Locked User login" />
+              </properties>
+              <output><![CDATA[Given I go to the main login page
+-> done: LoginStepDefinitions.GivenIGoToTheMainPage() (1.1s)
+When I introduce the locked_out_user user login credentials
+-> done: LoginStepDefinitions.WhenIntroduceCredentials("locked_out_user") (0.7s)
+And I click on login button
+-> done: LoginStepDefinitions.WhenAcceptTheTerms() (0.0s)
+Then I should see an error about the user being locked
+-> done: LoginStepDefinitions.ThenIShouldSeeALockedOutError() (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1006" name="StandardUserLogin" fullname="Playwright_Project.Features.LoginFeature.StandardUserLogin" methodname="StandardUserLogin" classname="Playwright_Project.Features.LoginFeature" runstate="Runnable" seed="1513263168" result="Passed" start-time="2024-08-06T10:45:06.4412093Z" end-time="2024-08-06T10:45:11.4859834Z" duration="5.044611" asserts="0">
+              <properties>
+                <property name="Description" value="Standard User login" />
+              </properties>
+              <output><![CDATA[Given I go to the main login page
+-> done: LoginStepDefinitions.GivenIGoToTheMainPage() (1.2s)
+When I introduce the standard_user user login credentials
+-> done: LoginStepDefinitions.WhenIntroduceCredentials("standard_user") (0.2s)
+And I click on login button
+-> done: LoginStepDefinitions.WhenAcceptTheTerms() (0.1s)
+Then I should see main page
+-> done: LoginStepDefinitions.ThenIShouldSeeTheLoginPage() (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1007" name="StandardUserLoginIphone13" fullname="Playwright_Project.Features.LoginFeature.StandardUserLoginIphone13" methodname="StandardUserLoginIphone13" classname="Playwright_Project.Features.LoginFeature" runstate="Runnable" seed="1471508207" result="Passed" start-time="2024-08-06T10:45:11.4947383Z" end-time="2024-08-06T10:45:18.4191142Z" duration="6.924151" asserts="0">
+              <properties>
+                <property name="Description" value="Standard User login Iphone13" />
+              </properties>
+              <output><![CDATA[Given I want to emulate iphone13
+-> done: LoginStepDefinitions.GivenIWantToEmulateIphone13() (3.2s)
+Given I go to the main login page
+-> done: LoginStepDefinitions.GivenIGoToTheMainPage() (1.6s)
+When I introduce the standard_user user login credentials
+-> done: LoginStepDefinitions.WhenIntroduceCredentials("standard_user") (0.2s)
+And I click on login button
+-> done: LoginStepDefinitions.WhenAcceptTheTerms() (0.1s)
+Then I should see main page
+-> done: LoginStepDefinitions.ThenIShouldSeeTheLoginPage() (0.0s)
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="0-1009" name="PaymentUnitTestFeature" fullname="Playwright_Project.Features.PaymentUnitTestFeature" classname="Playwright_Project.Features.PaymentUnitTestFeature" runstate="Runnable" testcasecount="2" result="Passed" start-time="2024-08-06T10:45:18.4245956Z" end-time="2024-08-06T10:45:25.5258921Z" duration="7.101066" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="Description" value="PaymentUnitTest" />
+            </properties>
+            <test-case id="0-1010" name="MondayPayRateTest" fullname="Playwright_Project.Features.PaymentUnitTestFeature.MondayPayRateTest" methodname="MondayPayRateTest" classname="Playwright_Project.Features.PaymentUnitTestFeature" runstate="Runnable" seed="1562700755" result="Passed" start-time="2024-08-06T10:45:18.4266414Z" end-time="2024-08-06T10:45:21.9637618Z" duration="3.537006" asserts="0">
+              <properties>
+                <property name="Description" value="Monday Pay Rate Test" />
+              </properties>
+              <output><![CDATA[Given its monday
+-> done: PaymentUnitTestStepDefinitions.GivenItsDayOfTheWeek("monday") (0.0s)
+When I calculate the rate of the pay for 10.00m
+-> done: PaymentUnitTestStepDefinitions.WhenICalculateTheRateOfThePayForM(10.00) (0.0s)
+Then I obtain the usual pay: 10.00m
+-> done: PaymentUnitTestStepDefinitions.ThenIObtainTheUsualPayM(10.00) (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1011" name="SundayPayRateTest" fullname="Playwright_Project.Features.PaymentUnitTestFeature.SundayPayRateTest" methodname="SundayPayRateTest" classname="Playwright_Project.Features.PaymentUnitTestFeature" runstate="Runnable" seed="226510444" result="Passed" start-time="2024-08-06T10:45:21.9638526Z" end-time="2024-08-06T10:45:25.5248052Z" duration="3.560837" asserts="0">
+              <properties>
+                <property name="Description" value="Sunday Pay Rate Test" />
+              </properties>
+              <output><![CDATA[Given its sunday
+-> done: PaymentUnitTestStepDefinitions.GivenItsDayOfTheWeek("sunday") (0.0s)
+When I calculate the rate of the pay for 10.00m
+-> done: PaymentUnitTestStepDefinitions.WhenICalculateTheRateOfThePayForM(10.00) (0.0s)
+Then I obtain a 25% higher pay: 12.5m
+-> done: PaymentUnitTestStepDefinitions.ThenIObtainAHigherPayM(12.5) (0.0s)
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

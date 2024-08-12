@@ -11,18 +11,30 @@ namespace Playwright_Project.Steps
     public class LoginStepDefinitions
     {
 
-        private readonly IPage _page;
+        private IPage _page;
         private LoginPage _loginPage;
 
         public LoginStepDefinitions (IPage page)
         {
             _page = page;
-            _loginPage = new LoginPage(_page);
         }
 
+        [Given("I want to emulate iphone13")]
+        public async Task GivenIWantToEmulateIphone13()
+        {
+            var pw = await Playwright.CreateAsync();
+            var browser = await pw.Chromium.LaunchAsync(new BrowserTypeLaunchOptions { Headless = false });
+            var iphone13 = pw.Devices["iPhone 13"];
+            var browserContext = await browser.NewContextAsync(iphone13);
+            _page = await browserContext.NewPageAsync();
+            
+        }
+        
         [Given("I go to the main login page")]
         public async Task GivenIGoToTheMainPage()
         {
+            _loginPage = new LoginPage(_page);
+
             await _loginPage.VisitLoginPage();
 
             // Expect a title "to contain" a substring.

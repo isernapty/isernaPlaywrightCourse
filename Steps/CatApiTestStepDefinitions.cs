@@ -6,7 +6,7 @@ using TechTalk.SpecFlow;
 namespace Playwright_Project.Steps
 {
     [Binding]
-    public class ApiTestStepDefinitions
+    public class CatApiTestStepDefinitions
     {
 
         dynamic _queryVars = new ExpandoObject();

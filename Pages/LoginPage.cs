@@ -7,7 +7,7 @@ namespace Playwright_Project.PageObjects
         private readonly string userBoxLocator = "#user-name";
         private readonly string passBoxLocator = "#password"; 
         private readonly string loginButtonLocator = "#login-button"; 
-        private readonly string errorLocator = "\".error-message-container > h3:nth-child(1)\""; 
+        private readonly string errorLocator = "h3[data-test=\"error\"]"; 
 
         public class Credentials
         {
@@ -25,6 +25,7 @@ namespace Playwright_Project.PageObjects
             { "standard_user", new Credentials("standard_user", "secret_sauce") },
             { "locked_out_user", new Credentials("locked_out_user", "secret_sauce") },
         };
+
 
         public LoginPage(IPage page)
         {

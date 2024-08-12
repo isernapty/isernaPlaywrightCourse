@@ -4,6 +4,7 @@
     {
         DayOfWeek DayOfWeek();
     }
+    
     public decimal GetPayRate(decimal baseRate, IDateTimeProvider dateTimeProvider)
     {
         return dateTimeProvider.DayOfWeek() ==

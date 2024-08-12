@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Playwright_Project
-build_property.ProjectDir = C:\Users\Yo\source\repos\Playwright Project\
+build_property.ProjectDir = C:\Users\i.serna\Experiments\dotnetCourse\isernaPlaywrightCourse\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

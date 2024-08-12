@@ -8,6 +8,13 @@ Scenario: Standard User login
 	And I click on login button
 	Then I should see main page
 
+Scenario: Standard User login Iphone13
+	Given I want to emulate iphone13
+	Given I go to the main login page
+	When I introduce the standard_user user login credentials
+	And I click on login button
+	Then I should see main page
+
 Scenario: Locked User login
 	Given I go to the main login page
 	When I introduce the locked_out_user user login credentials
