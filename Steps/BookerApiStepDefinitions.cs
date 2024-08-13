@@ -37,6 +37,13 @@ namespace Playwright_Project.Steps
             _response = await _client.PostAsync("https://restful-booker.herokuapp.com/auth", body);
         }
 
+        [When(@"I call the mock auth API endpoint")]
+        public async Task WhenICallTheMockAuthAPIEndpoint()
+        {
+            HttpClient _client = new HttpClient();
+            _response = await _client.GetAsync("http://localhost:9876/auth");
+        }
+
         [Then(@"I receive a token within the response")]
         public async Task ThenIReceiveATokenWithinTheResponse()
         {
@@ -45,6 +52,15 @@ namespace Playwright_Project.Steps
             dynamic bodyJson = JsonConvert.DeserializeObject(body);
             string token = bodyJson.token;
             token.Should().HaveLength(15);
+            _response.StatusCode.Should().Be(HttpStatusCode.OK);
+        }
+
+        [Then(@"I receive a mock token within the response")]
+        public async Task ThenIReceiveAMockTokenWithinTheResponse()
+        {
+            var body = await _response.Content.ReadAsStringAsync();
+            System.Console.WriteLine(body);
+            body.Should().Be("MockToken");
             _response.StatusCode.Should().Be(HttpStatusCode.OK);
         }
     }
