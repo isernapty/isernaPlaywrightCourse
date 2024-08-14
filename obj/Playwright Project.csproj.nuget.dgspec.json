@@ -93,6 +93,10 @@
               "target": "Package",
               "version": "[3.9.74, )"
             },
+            "Testcontainers": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
             "WireMock.Net": {
               "target": "Package",
               "version": "[1.5.62, )"

@@ -26,7 +26,7 @@ namespace Playwright_Project.Hooks
         // Setup playwright chromium
         public async Task Setup()
         {
-            await SetupBrowser();
+            // await SetupBrowser();
 
             mockAPI.StartServer();
             mockAPI.CreateMockAuth();
