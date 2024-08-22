@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="1116b14c-1623-4f93-9c8b-7b1e519d56d0" name="Yo@TOTORO 2024-08-20 16:42:02" runUser="TOTORO\Yo" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2024-08-20T16:42:02.1630794+02:00" queuing="2024-08-20T16:42:02.1630796+02:00" start="2024-08-20T16:41:56.5572275+02:00" finish="2024-08-20T16:42:03.8658118+02:00" />
+  <TestSettings name="default" id="e02718e3-f891-4228-9ad4-21e4cf0ccc2e">
+    <Deployment runDeploymentRoot="Yo_TOTORO_2024-08-20_16_42_02" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="3ffb7e01-d989-4534-8ebd-ea6144c61324" testId="6e69dd84-7c4d-78a5-1074-e1fca734e654" testName="StandardUserLoginIphone13" computerName="TOTORO" duration="00:00:00.0040220" startTime="2024-08-20T16:42:02.9479320+02:00" endTime="2024-08-20T16:42:02.9519540+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ffb7e01-d989-4534-8ebd-ea6144c61324">
+      <Output>
+        <StdOut>Given I want to emulate iphone13&#xD;
+-&gt; error: Interface cannot be resolved: Microsoft.Playwright.IPage (resolution path: Playwright_Project.Steps.LoginStepDefinitions) (0,0s)&#xD;
+Given I go to the main login page&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I introduce the standard_user user login credentials&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click on login button&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see main page&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>BoDi.ObjectContainerException : Interface cannot be resolved: Microsoft.Playwright.IPage (resolution path: Playwright_Project.Steps.LoginStepDefinitions)</Message>
+          <StackTrace>   at BoDi.ObjectContainer.TypeRegistration.&lt;&gt;c__DisplayClass3_0.&lt;ResolvePerContext&gt;b__1()&#xD;
+   at BoDi.ObjectContainer.RegistrationWithStrategy.ExecuteWithLock(Object lockObject, Func`1 getter, Func`1 factory, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.TypeRegistration.ResolvePerContext(ObjectContainer container, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.RegistrationWithStrategy.Resolve(ObjectContainer container, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.ResolveObject(RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.Resolve(Type typeToResolve, ResolutionList resolutionPath, String name)&#xD;
+   at BoDi.ObjectContainer.&lt;&gt;c__DisplayClass71_0.&lt;ResolveArguments&gt;b__0(ParameterInfo p)&#xD;
+   at System.Linq.Enumerable.SelectArrayIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)&#xD;
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToArray()&#xD;
+   at BoDi.ObjectContainer.ResolveArguments(IEnumerable`1 parameters, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.CreateObject(Type type, ResolutionList resolutionPath, RegistrationKey keyToResolve)&#xD;
+   at BoDi.ObjectContainer.TypeRegistration.&lt;&gt;c__DisplayClass3_0.&lt;ResolvePerContext&gt;b__1()&#xD;
+   at BoDi.ObjectContainer.RegistrationWithStrategy.ExecuteWithLock(Object lockObject, Func`1 getter, Func`1 factory, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.TypeRegistration.ResolvePerContext(ObjectContainer container, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.RegistrationWithStrategy.Resolve(ObjectContainer container, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.ResolveObject(RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.Resolve(Type typeToResolve, ResolutionList resolutionPath, String name)&#xD;
+   at BoDi.ObjectContainer.Resolve(Type typeToResolve, String name)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestObjectResolver.ResolveBindingInstance(Type bindingType, IObjectContainer container)&#xD;
+   at lambda_method110(Closure, IContextManager)&#xD;
+   at InvokeStub_Func`2.Invoke(Object, Span`1)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at Playwright_Project.Features.LoginFeature.ScenarioCleanup()&#xD;
+   at Playwright_Project.Features.LoginFeature.StandardUserLoginIphone13() in C:\Users\Yo\source\repos\Playwright Project\Features\Login.feature:line 16&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4c2fccbe-97d6-4010-9ea9-c5c330fb897f" testId="939c99b9-176a-0d79-f7ea-a43715674025" testName="TestGETAPICall" computerName="TOTORO" duration="00:00:02.1591770" startTime="2024-08-20T16:41:59.9536251+02:00" endTime="2024-08-20T16:42:02.1127555+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4c2fccbe-97d6-4010-9ea9-c5c330fb897f">
+      <Output>
+        <StdOut>Given I prepare the query vars for the request&#xD;
+-&gt; done: CatApiTestStepDefinitions.GivenIPrepareTheQueryVarsForTheRequest() (0,1s)&#xD;
+When I send the GET request to the API&#xD;
+-&gt; done: CatApiTestStepDefinitions.WhenISendTheGETRequestToTheAPI() (0,5s)&#xD;
+Then I receive the response with a status 200&#xD;
+-&gt; done: CatApiTestStepDefinitions.ThenIReceiveTheResponseWithAStatus() (0,1s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6ebe4ca6-55ed-4cd0-9472-4f19265a1f88" testId="d0290d4f-71e7-6913-f8ac-e497acb22faa" testName="StoreThenReadCredentials" computerName="TOTORO" duration="00:00:00.5641429" startTime="2024-08-20T16:42:03.2365271+02:00" endTime="2024-08-20T16:42:03.8006702+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6ebe4ca6-55ed-4cd0-9472-4f19265a1f88">
+      <Output>
+        <StdOut>Given I run the mySql test container&#xD;
+-&gt; binding error: Error calling binding method 'Playwright Project:Playwright_Project.Steps.TestContainersTestStepDefinitions.GivenIRunTheMySqlTestContainer()': Docker is either not running or misconfigured. Please ensure that Docker is running and that the endpoint is properly configured. You can customize your configuration using either the environment variables or the ~/.testcontainers.properties file. For more information, visit:&#xD;
+https://dotnet.testcontainers.org/custom_configuration/ (Parameter 'DockerEndpointAuthConfig')&#xD;
+Given I store credentials&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I read credentials&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>TechTalk.SpecFlow.BindingException : Error calling binding method 'Playwright Project:Playwright_Project.Steps.TestContainersTestStepDefinitions.GivenIRunTheMySqlTestContainer()': Docker is either not running or misconfigured. Please ensure that Docker is running and that the endpoint is properly configured. You can customize your configuration using either the environment variables or the ~/.testcontainers.properties file. For more information, visit:&#xD;
+https://dotnet.testcontainers.org/custom_configuration/ (Parameter 'DockerEndpointAuthConfig')</Message>
+          <StackTrace>   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at Playwright_Project.Features.TestContainersMySQLFeatureFeature.ScenarioCleanup()&#xD;
+   at Playwright_Project.Features.TestContainersMySQLFeatureFeature.StoreThenReadCredentials() in C:\Users\Yo\source\repos\Playwright Project\Features\TestContainersMySQLTest.feature:line 8&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a78c326a-1ba5-4400-a526-73dfbd863353" testId="c65c45a4-dd51-583c-9961-1523943169b8" testName="SundayPayRateTest" computerName="TOTORO" duration="00:00:00.0041770" startTime="2024-08-20T16:42:03.2319667+02:00" endTime="2024-08-20T16:42:03.2361436+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a78c326a-1ba5-4400-a526-73dfbd863353">
+      <Output>
+        <StdOut>Given its sunday&#xD;
+-&gt; done: PaymentUnitTestStepDefinitions.GivenItsDayOfTheWeek("sunday") (0,0s)&#xD;
+When I calculate the rate of the pay for 10.00m&#xD;
+-&gt; done: PaymentUnitTestStepDefinitions.WhenICalculateTheRateOfThePayForM(10,00) (0,0s)&#xD;
+Then I obtain a 25% higher pay: 12.5m&#xD;
+-&gt; done: PaymentUnitTestStepDefinitions.ThenIObtainAHigherPayM(12,5) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="11c13a1d-fe90-41bd-8988-a00fa4ee9c7f" testId="e1b72c9b-1361-b5fb-eb49-5a9c2e8b7318" testName="RunAndTestHelloWorldTestContainer" computerName="TOTORO" duration="00:00:00.0064320" startTime="2024-08-20T16:42:03.8010823+02:00" endTime="2024-08-20T16:42:03.8075140+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="11c13a1d-fe90-41bd-8988-a00fa4ee9c7f">
+      <Output>
+        <StdOut>Given I run the hello world test container&#xD;
+-&gt; binding error: Error calling binding method 'Playwright Project:Playwright_Project.Steps.TestContainersHelloWorldTestStepDefinitions.GivenIRunTheHelloWorldTestContainer()': Docker is either not running or misconfigured. Please ensure that Docker is running and that the endpoint is properly configured. You can customize your configuration using either the environment variables or the ~/.testcontainers.properties file. For more information, visit:&#xD;
+https://dotnet.testcontainers.org/custom_configuration/ (Parameter 'DockerEndpointAuthConfig')&#xD;
+When I make a request to the URL&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I obtain a valid UUID inside the response&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>TechTalk.SpecFlow.BindingException : Error calling binding method 'Playwright Project:Playwright_Project.Steps.TestContainersHelloWorldTestStepDefinitions.GivenIRunTheHelloWorldTestContainer()': Docker is either not running or misconfigured. Please ensure that Docker is running and that the endpoint is properly configured. You can customize your configuration using either the environment variables or the ~/.testcontainers.properties file. For more information, visit:&#xD;
+https://dotnet.testcontainers.org/custom_configuration/ (Parameter 'DockerEndpointAuthConfig')</Message>
+          <StackTrace>   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at Playwright_Project.Features.TestContainersTestFeature.ScenarioCleanup()&#xD;
+   at Playwright_Project.Features.TestContainersTestFeature.RunAndTestHelloWorldTestContainer() in C:\Users\Yo\source\repos\Playwright Project\Features\TestContainersHelloWorldTest.feature:line 8&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0630469c-4b48-489d-8e2b-6f7e0204e4e5" testId="06bd6191-7a69-f42b-f76a-0ecbd2f0b3ae" testName="StandardUserLogin" computerName="TOTORO" duration="00:00:00.0038570" startTime="2024-08-20T16:42:02.9440511+02:00" endTime="2024-08-20T16:42:02.9479081+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0630469c-4b48-489d-8e2b-6f7e0204e4e5">
+      <Output>
+        <StdOut>Given I go to the main login page&#xD;
+-&gt; error: Interface cannot be resolved: Microsoft.Playwright.IPage (resolution path: Playwright_Project.Steps.LoginStepDefinitions) (0,0s)&#xD;
+When I introduce the standard_user user login credentials&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click on login button&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see main page&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>BoDi.ObjectContainerException : Interface cannot be resolved: Microsoft.Playwright.IPage (resolution path: Playwright_Project.Steps.LoginStepDefinitions)</Message>
+          <StackTrace>   at BoDi.ObjectContainer.TypeRegistration.&lt;&gt;c__DisplayClass3_0.&lt;ResolvePerContext&gt;b__1()&#xD;
+   at BoDi.ObjectContainer.RegistrationWithStrategy.ExecuteWithLock(Object lockObject, Func`1 getter, Func`1 factory, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.TypeRegistration.ResolvePerContext(ObjectContainer container, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.RegistrationWithStrategy.Resolve(ObjectContainer container, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.ResolveObject(RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.Resolve(Type typeToResolve, ResolutionList resolutionPath, String name)&#xD;
+   at BoDi.ObjectContainer.&lt;&gt;c__DisplayClass71_0.&lt;ResolveArguments&gt;b__0(ParameterInfo p)&#xD;
+   at System.Linq.Enumerable.SelectArrayIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)&#xD;
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToArray()&#xD;
+   at BoDi.ObjectContainer.ResolveArguments(IEnumerable`1 parameters, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.CreateObject(Type type, ResolutionList resolutionPath, RegistrationKey keyToResolve)&#xD;
+   at BoDi.ObjectContainer.TypeRegistration.&lt;&gt;c__DisplayClass3_0.&lt;ResolvePerContext&gt;b__1()&#xD;
+   at BoDi.ObjectContainer.RegistrationWithStrategy.ExecuteWithLock(Object lockObject, Func`1 getter, Func`1 factory, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.TypeRegistration.ResolvePerContext(ObjectContainer container, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.RegistrationWithStrategy.Resolve(ObjectContainer container, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.ResolveObject(RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.Resolve(Type typeToResolve, ResolutionList resolutionPath, String name)&#xD;
+   at BoDi.ObjectContainer.Resolve(Type typeToResolve, String name)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestObjectResolver.ResolveBindingInstance(Type bindingType, IObjectContainer container)&#xD;
+   at lambda_method109(Closure, IContextManager)&#xD;
+   at InvokeStub_Func`2.Invoke(Object, Span`1)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at Playwright_Project.Features.LoginFeature.ScenarioCleanup()&#xD;
+   at Playwright_Project.Features.LoginFeature.StandardUserLogin() in C:\Users\Yo\source\repos\Playwright Project\Features\Login.feature:line 9&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f6fd86cd-1384-4036-a74b-960d2a0be206" testId="74ed29bc-1e10-2d79-1954-5835e396d2d4" testName="MondayPayRateTest" computerName="TOTORO" duration="00:00:00.2795420" startTime="2024-08-20T16:42:02.9524002+02:00" endTime="2024-08-20T16:42:03.2319423+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f6fd86cd-1384-4036-a74b-960d2a0be206">
+      <Output>
+        <StdOut>Given its monday&#xD;
+-&gt; done: PaymentUnitTestStepDefinitions.GivenItsDayOfTheWeek("monday") (0,2s)&#xD;
+When I calculate the rate of the pay for 10.00m&#xD;
+-&gt; done: PaymentUnitTestStepDefinitions.WhenICalculateTheRateOfThePayForM(10,00) (0,1s)&#xD;
+Then I obtain the usual pay: 10.00m&#xD;
+-&gt; done: PaymentUnitTestStepDefinitions.ThenIObtainTheUsualPayM(10,00) (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="af58799c-0b4f-42e2-a9c8-2f88e39a9ca1" testId="45ea01b1-3909-c833-4451-548dab1a56f1" testName="LockedUserLogin" computerName="TOTORO" duration="00:00:00.0224450" startTime="2024-08-20T16:42:02.9215125+02:00" endTime="2024-08-20T16:42:02.9439573+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af58799c-0b4f-42e2-a9c8-2f88e39a9ca1">
+      <Output>
+        <StdOut>Given I go to the main login page&#xD;
+-&gt; error: Interface cannot be resolved: Microsoft.Playwright.IPage (resolution path: Playwright_Project.Steps.LoginStepDefinitions) (0,0s)&#xD;
+When I introduce the locked_out_user user login credentials&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click on login button&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see an error about the user being locked&#xD;
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>BoDi.ObjectContainerException : Interface cannot be resolved: Microsoft.Playwright.IPage (resolution path: Playwright_Project.Steps.LoginStepDefinitions)</Message>
+          <StackTrace>   at BoDi.ObjectContainer.TypeRegistration.&lt;&gt;c__DisplayClass3_0.&lt;ResolvePerContext&gt;b__1()&#xD;
+   at BoDi.ObjectContainer.RegistrationWithStrategy.ExecuteWithLock(Object lockObject, Func`1 getter, Func`1 factory, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.TypeRegistration.ResolvePerContext(ObjectContainer container, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.RegistrationWithStrategy.Resolve(ObjectContainer container, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.ResolveObject(RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.Resolve(Type typeToResolve, ResolutionList resolutionPath, String name)&#xD;
+   at BoDi.ObjectContainer.&lt;&gt;c__DisplayClass71_0.&lt;ResolveArguments&gt;b__0(ParameterInfo p)&#xD;
+   at System.Linq.Enumerable.SelectArrayIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)&#xD;
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToArray()&#xD;
+   at BoDi.ObjectContainer.ResolveArguments(IEnumerable`1 parameters, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.CreateObject(Type type, ResolutionList resolutionPath, RegistrationKey keyToResolve)&#xD;
+   at BoDi.ObjectContainer.TypeRegistration.&lt;&gt;c__DisplayClass3_0.&lt;ResolvePerContext&gt;b__1()&#xD;
+   at BoDi.ObjectContainer.RegistrationWithStrategy.ExecuteWithLock(Object lockObject, Func`1 getter, Func`1 factory, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.TypeRegistration.ResolvePerContext(ObjectContainer container, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.RegistrationWithStrategy.Resolve(ObjectContainer container, RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.ResolveObject(RegistrationKey keyToResolve, ResolutionList resolutionPath)&#xD;
+   at BoDi.ObjectContainer.Resolve(Type typeToResolve, ResolutionList resolutionPath, String name)&#xD;
+   at BoDi.ObjectContainer.Resolve(Type typeToResolve, String name)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestObjectResolver.ResolveBindingInstance(Type bindingType, IObjectContainer container)&#xD;
+   at lambda_method109(Closure, IContextManager)&#xD;
+   at InvokeStub_Func`2.Invoke(Object, Span`1)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at Playwright_Project.Features.LoginFeature.ScenarioCleanup()&#xD;
+   at Playwright_Project.Features.LoginFeature.LockedUserLogin() in C:\Users\Yo\source\repos\Playwright Project\Features\Login.feature:line 22&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="abbb5774-1375-4915-81c9-1663b4697141" testId="4ba7323e-92ae-a59a-e30f-d90a928b51de" testName="CreateAuthToken" computerName="TOTORO" duration="00:00:00.4832360" startTime="2024-08-20T16:42:02.1166894+02:00" endTime="2024-08-20T16:42:02.5999251+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="abbb5774-1375-4915-81c9-1663b4697141">
+      <Output>
+        <StdOut>Given I extract the username and password from the JSON file&#xD;
+-&gt; done: BookerApiStepDefinitions.GivenIExtractTheUsernameAndPasswordFromTheJSONFile() (0,0s)&#xD;
+When I call the auth API endpoint&#xD;
+-&gt; done: BookerApiStepDefinitions.WhenICallTheAuthAPIEndpoint() (0,5s)&#xD;
+Then I receive a token within the response&#xD;
+{"token":"295c61c067640cf"}&#xD;
+-&gt; done: BookerApiStepDefinitions.ThenIReceiveATokenWithinTheResponse() (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d122cbb5-06d2-4342-b38c-53993216ec5c" testId="27e8021f-8dac-e3d2-9160-b4f30c1fcfdf" testName="CreateMockAuthToken" computerName="TOTORO" duration="00:00:00.3208090" startTime="2024-08-20T16:42:02.5999531+02:00" endTime="2024-08-20T16:42:02.9207616+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d122cbb5-06d2-4342-b38c-53993216ec5c">
+      <Output>
+        <StdOut>Given I extract the username and password from the JSON file&#xD;
+-&gt; done: BookerApiStepDefinitions.GivenIExtractTheUsernameAndPasswordFromTheJSONFile() (0,0s)&#xD;
+When I call the mock auth API endpoint&#xD;
+-&gt; done: BookerApiStepDefinitions.WhenICallTheMockAuthAPIEndpoint() (0,3s)&#xD;
+Then I receive a mock token within the response&#xD;
+MockToken&#xD;
+-&gt; done: BookerApiStepDefinitions.ThenIReceiveAMockTokenWithinTheResponse() (0,0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="StoreThenReadCredentials" storage="c:\users\yo\source\repos\playwright project\bin\debug\net8.0\playwright project.dll" id="d0290d4f-71e7-6913-f8ac-e497acb22faa">
+      <Execution id="6ebe4ca6-55ed-4cd0-9472-4f19265a1f88" />
+      <TestMethod codeBase="C:\Users\Yo\source\repos\Playwright Project\bin\Debug\net8.0\Playwright Project.dll" adapterTypeName="executor://nunit3testexecutor/" className="Playwright_Project.Features.TestContainersMySQLFeatureFeature" name="StoreThenReadCredentials" />
+    </UnitTest>
+    <UnitTest name="TestGETAPICall" storage="c:\users\yo\source\repos\playwright project\bin\debug\net8.0\playwright project.dll" id="939c99b9-176a-0d79-f7ea-a43715674025">
+      <Execution id="4c2fccbe-97d6-4010-9ea9-c5c330fb897f" />
+      <TestMethod codeBase="C:\Users\Yo\source\repos\Playwright Project\bin\Debug\net8.0\Playwright Project.dll" adapterTypeName="executor://nunit3testexecutor/" className="Playwright_Project.Features.ApiTestFeature" name="TestGETAPICall" />
+    </UnitTest>
+    <UnitTest name="CreateMockAuthToken" storage="c:\users\yo\source\repos\playwright project\bin\debug\net8.0\playwright project.dll" id="27e8021f-8dac-e3d2-9160-b4f30c1fcfdf">
+      <Execution id="d122cbb5-06d2-4342-b38c-53993216ec5c" />
+      <TestMethod codeBase="C:\Users\Yo\source\repos\Playwright Project\bin\Debug\net8.0\Playwright Project.dll" adapterTypeName="executor://nunit3testexecutor/" className="Playwright_Project.Features.BookerApiFeature" name="CreateMockAuthToken" />
+    </UnitTest>
+    <UnitTest name="LockedUserLogin" storage="c:\users\yo\source\repos\playwright project\bin\debug\net8.0\playwright project.dll" id="45ea01b1-3909-c833-4451-548dab1a56f1">
+      <Execution id="af58799c-0b4f-42e2-a9c8-2f88e39a9ca1" />
+      <TestMethod codeBase="C:\Users\Yo\source\repos\Playwright Project\bin\Debug\net8.0\Playwright Project.dll" adapterTypeName="executor://nunit3testexecutor/" className="Playwright_Project.Features.LoginFeature" name="LockedUserLogin" />
+    </UnitTest>
+    <UnitTest name="MondayPayRateTest" storage="c:\users\yo\source\repos\playwright project\bin\debug\net8.0\playwright project.dll" id="74ed29bc-1e10-2d79-1954-5835e396d2d4">
+      <Execution id="f6fd86cd-1384-4036-a74b-960d2a0be206" />
+      <TestMethod codeBase="C:\Users\Yo\source\repos\Playwright Project\bin\Debug\net8.0\Playwright Project.dll" adapterTypeName="executor://nunit3testexecutor/" className="Playwright_Project.Features.PaymentUnitTestFeature" name="MondayPayRateTest" />
+    </UnitTest>
+    <UnitTest name="SundayPayRateTest" storage="c:\users\yo\source\repos\playwright project\bin\debug\net8.0\playwright project.dll" id="c65c45a4-dd51-583c-9961-1523943169b8">
+      <Execution id="a78c326a-1ba5-4400-a526-73dfbd863353" />
+      <TestMethod codeBase="C:\Users\Yo\source\repos\Playwright Project\bin\Debug\net8.0\Playwright Project.dll" adapterTypeName="executor://nunit3testexecutor/" className="Playwright_Project.Features.PaymentUnitTestFeature" name="SundayPayRateTest" />
+    </UnitTest>
+    <UnitTest name="StandardUserLogin" storage="c:\users\yo\source\repos\playwright project\bin\debug\net8.0\playwright project.dll" id="06bd6191-7a69-f42b-f76a-0ecbd2f0b3ae">
+      <Execution id="0630469c-4b48-489d-8e2b-6f7e0204e4e5" />
+      <TestMethod codeBase="C:\Users\Yo\source\repos\Playwright Project\bin\Debug\net8.0\Playwright Project.dll" adapterTypeName="executor://nunit3testexecutor/" className="Playwright_Project.Features.LoginFeature" name="StandardUserLogin" />
+    </UnitTest>
+    <UnitTest name="CreateAuthToken" storage="c:\users\yo\source\repos\playwright project\bin\debug\net8.0\playwright project.dll" id="4ba7323e-92ae-a59a-e30f-d90a928b51de">
+      <Execution id="abbb5774-1375-4915-81c9-1663b4697141" />
+      <TestMethod codeBase="C:\Users\Yo\source\repos\Playwright Project\bin\Debug\net8.0\Playwright Project.dll" adapterTypeName="executor://nunit3testexecutor/" className="Playwright_Project.Features.BookerApiFeature" name="CreateAuthToken" />
+    </UnitTest>
+    <UnitTest name="StandardUserLoginIphone13" storage="c:\users\yo\source\repos\playwright project\bin\debug\net8.0\playwright project.dll" id="6e69dd84-7c4d-78a5-1074-e1fca734e654">
+      <Execution id="3ffb7e01-d989-4534-8ebd-ea6144c61324" />
+      <TestMethod codeBase="C:\Users\Yo\source\repos\Playwright Project\bin\Debug\net8.0\Playwright Project.dll" adapterTypeName="executor://nunit3testexecutor/" className="Playwright_Project.Features.LoginFeature" name="StandardUserLoginIphone13" />
+    </UnitTest>
+    <UnitTest name="RunAndTestHelloWorldTestContainer" storage="c:\users\yo\source\repos\playwright project\bin\debug\net8.0\playwright project.dll" id="e1b72c9b-1361-b5fb-eb49-5a9c2e8b7318">
+      <Execution id="11c13a1d-fe90-41bd-8988-a00fa4ee9c7f" />
+      <TestMethod codeBase="C:\Users\Yo\source\repos\Playwright Project\bin\Debug\net8.0\Playwright Project.dll" adapterTypeName="executor://nunit3testexecutor/" className="Playwright_Project.Features.TestContainersTestFeature" name="RunAndTestHelloWorldTestContainer" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="6e69dd84-7c4d-78a5-1074-e1fca734e654" executionId="3ffb7e01-d989-4534-8ebd-ea6144c61324" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="939c99b9-176a-0d79-f7ea-a43715674025" executionId="4c2fccbe-97d6-4010-9ea9-c5c330fb897f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d0290d4f-71e7-6913-f8ac-e497acb22faa" executionId="6ebe4ca6-55ed-4cd0-9472-4f19265a1f88" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c65c45a4-dd51-583c-9961-1523943169b8" executionId="a78c326a-1ba5-4400-a526-73dfbd863353" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1b72c9b-1361-b5fb-eb49-5a9c2e8b7318" executionId="11c13a1d-fe90-41bd-8988-a00fa4ee9c7f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06bd6191-7a69-f42b-f76a-0ecbd2f0b3ae" executionId="0630469c-4b48-489d-8e2b-6f7e0204e4e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="74ed29bc-1e10-2d79-1954-5835e396d2d4" executionId="f6fd86cd-1384-4036-a74b-960d2a0be206" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="45ea01b1-3909-c833-4451-548dab1a56f1" executionId="af58799c-0b4f-42e2-a9c8-2f88e39a9ca1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4ba7323e-92ae-a59a-e30f-d90a928b51de" executionId="abbb5774-1375-4915-81c9-1663b4697141" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="27e8021f-8dac-e3d2-9160-b4f30c1fcfdf" executionId="d122cbb5-06d2-4342-b38c-53993216ec5c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados sin formato de lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="10" executed="10" passed="5" failed="5" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.6.0.0: Test execution started&#xD;
+Running all tests in C:\Users\Yo\source\repos\Playwright Project\bin\Debug\net8.0\Playwright Project.dll&#xD;
+   NUnit3TestExecutor discovered 10 of 10 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+Given I prepare the query vars for the request&#xD;
+-&gt; done: CatApiTestStepDefinitions.GivenIPrepareTheQueryVarsForTheRequest() (0,1s)&#xD;
+When I send the GET request to the API&#xD;
+-&gt; done: CatApiTestStepDefinitions.WhenISendTheGETRequestToTheAPI() (0,5s)&#xD;
+Then I receive the response with a status 200&#xD;
+-&gt; done: CatApiTestStepDefinitions.ThenIReceiveTheResponseWithAStatus() (0,1s)&#xD;
+&#xD;
+Given I extract the username and password from the JSON file&#xD;
+-&gt; done: BookerApiStepDefinitions.GivenIExtractTheUsernameAndPasswordFromTheJSONFile() (0,0s)&#xD;
+When I call the auth API endpoint&#xD;
+-&gt; done: BookerApiStepDefinitions.WhenICallTheAuthAPIEndpoint() (0,5s)&#xD;
+Then I receive a token within the response&#xD;
+{"token":"295c61c067640cf"}&#xD;
+-&gt; done: BookerApiStepDefinitions.ThenIReceiveATokenWithinTheResponse() (0,0s)&#xD;
+&#xD;
+Given I extract the username and password from the JSON file&#xD;
+-&gt; done: BookerApiStepDefinitions.GivenIExtractTheUsernameAndPasswordFromTheJSONFile() (0,0s)&#xD;
+When I call the mock auth API endpoint&#xD;
+-&gt; done: BookerApiStepDefinitions.WhenICallTheMockAuthAPIEndpoint() (0,3s)&#xD;
+Then I receive a mock token within the response&#xD;
+MockToken&#xD;
+-&gt; done: BookerApiStepDefinitions.ThenIReceiveAMockTokenWithinTheResponse() (0,0s)&#xD;
+&#xD;
+Given I go to the main login page&#xD;
+-&gt; error: Interface cannot be resolved: Microsoft.Playwright.IPage (resolution path: Playwright_Project.Steps.LoginStepDefinitions) (0,0s)&#xD;
+When I introduce the locked_out_user user login credentials&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click on login button&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see an error about the user being locked&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Given I go to the main login page&#xD;
+-&gt; error: Interface cannot be resolved: Microsoft.Playwright.IPage (resolution path: Playwright_Project.Steps.LoginStepDefinitions) (0,0s)&#xD;
+When I introduce the standard_user user login credentials&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click on login button&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see main page&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Given I want to emulate iphone13&#xD;
+-&gt; error: Interface cannot be resolved: Microsoft.Playwright.IPage (resolution path: Playwright_Project.Steps.LoginStepDefinitions) (0,0s)&#xD;
+Given I go to the main login page&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I introduce the standard_user user login credentials&#xD;
+-&gt; skipped because of previous errors&#xD;
+And I click on login button&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see main page&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Given its monday&#xD;
+-&gt; done: PaymentUnitTestStepDefinitions.GivenItsDayOfTheWeek("monday") (0,2s)&#xD;
+When I calculate the rate of the pay for 10.00m&#xD;
+-&gt; done: PaymentUnitTestStepDefinitions.WhenICalculateTheRateOfThePayForM(10,00) (0,1s)&#xD;
+Then I obtain the usual pay: 10.00m&#xD;
+-&gt; done: PaymentUnitTestStepDefinitions.ThenIObtainTheUsualPayM(10,00) (0,0s)&#xD;
+&#xD;
+Given its sunday&#xD;
+-&gt; done: PaymentUnitTestStepDefinitions.GivenItsDayOfTheWeek("sunday") (0,0s)&#xD;
+When I calculate the rate of the pay for 10.00m&#xD;
+-&gt; done: PaymentUnitTestStepDefinitions.WhenICalculateTheRateOfThePayForM(10,00) (0,0s)&#xD;
+Then I obtain a 25% higher pay: 12.5m&#xD;
+-&gt; done: PaymentUnitTestStepDefinitions.ThenIObtainAHigherPayM(12,5) (0,0s)&#xD;
+&#xD;
+Given I run the mySql test container&#xD;
+-&gt; binding error: Error calling binding method 'Playwright Project:Playwright_Project.Steps.TestContainersTestStepDefinitions.GivenIRunTheMySqlTestContainer()': Docker is either not running or misconfigured. Please ensure that Docker is running and that the endpoint is properly configured. You can customize your configuration using either the environment variables or the ~/.testcontainers.properties file. For more information, visit:&#xD;
+https://dotnet.testcontainers.org/custom_configuration/ (Parameter 'DockerEndpointAuthConfig')&#xD;
+Given I store credentials&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I read credentials&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+Given I run the hello world test container&#xD;
+-&gt; binding error: Error calling binding method 'Playwright Project:Playwright_Project.Steps.TestContainersHelloWorldTestStepDefinitions.GivenIRunTheHelloWorldTestContainer()': Docker is either not running or misconfigured. Please ensure that Docker is running and that the endpoint is properly configured. You can customize your configuration using either the environment variables or the ~/.testcontainers.properties file. For more information, visit:&#xD;
+https://dotnet.testcontainers.org/custom_configuration/ (Parameter 'DockerEndpointAuthConfig')&#xD;
+When I make a request to the URL&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I obtain a valid UUID inside the response&#xD;
+-&gt; skipped because of previous errors&#xD;
+&#xD;
+NUnit Adapter 4.6.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
